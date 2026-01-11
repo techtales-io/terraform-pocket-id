@@ -1,0 +1,6 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIDGroup
+metadata:
+  name: filebrowser-users
+spec: {}
