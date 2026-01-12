@@ -24,3 +24,9 @@ import {
   to = module.groups["secret-users"].pocketid_group.main
   id = "b0471310-6ee2-4591-bf66-29e8aacda8d2"
 }
+
+# 20260113_003400 import_existing_clients
+import {
+  to = module.clients["filebrowser"].pocketid_client.main
+  id = "6972cd97-89dd-414d-8655-ebee4e278149"
+}

@@ -24,3 +24,17 @@ module "groups" {
   source   = "../modules/pocket-id/group"
   config   = each.value
 }
+
+module "clients" {
+  for_each = module.yaml.data.by_kind["PocketIDClient"]
+  source   = "../modules/pocket-id/client"
+  # translate the group names to IDs
+  config = merge(each.value, {
+    spec = merge(each.value.spec, {
+      groups = try(each.value.spec.groups, null) != null ? [
+        for group_name in each.value.spec.groups :
+        module.groups[group_name].data.id
+      ] : null
+    })
+  })
+}
