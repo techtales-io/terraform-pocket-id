@@ -1,3 +1,10 @@
+# 20260111_233200 move_kids_group
+moved {
+  from = pocketid_group.kids
+  to   = module.groups["kids"].pocketid_group.main
+}
+
+# 20260112_000400 import_existing_groups
 import {
   to = module.groups["filebrowser-admins"].pocketid_group.main
   id = "6693c447-337c-4e94-9f9f-b97a786c5d56"
