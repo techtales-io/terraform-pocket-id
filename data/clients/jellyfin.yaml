@@ -1,0 +1,12 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIDClient
+metadata:
+  name: jellyfin
+spec:
+  callbackUrls:
+    - https://jellyfin.techtales.io/sso/OID/redirect/pocketid
+  # groups:
+  #   - grafana-admins
+  launchUrl: https://jellyfin.techtales.io
+  pkce: true

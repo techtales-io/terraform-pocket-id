@@ -1,0 +1,12 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIDClient
+metadata:
+  name: openbao
+spec:
+  callbackUrls:
+    - https://secrets.techtales.io/ui/vault/auth/pocketid/oidc/callback
+    - http://localhost:8250/pocketid/oidc/callback
+  # groups:
+  #   - grafana-admins
+  launchUrl: https://secrets.techtales.io
