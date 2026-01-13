@@ -18,5 +18,5 @@ resource "pocketid_client" "main" {
   pkce_enabled              = var.config.spec.pkce == null ? false : var.config.spec.pkce
   launch_url                = var.config.spec.launchUrl
   requires_reauthentication = var.config.spec.reauthenticate == null ? false : var.config.spec.reauthenticate
-  allowed_user_groups       = var.config.spec.groups != null ? var.config.spec.groups : []
+  allowed_user_groups       = var.config.spec.groups != null ? var.config.spec.groups : null
 }
