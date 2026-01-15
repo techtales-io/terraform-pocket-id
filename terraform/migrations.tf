@@ -51,3 +51,27 @@ import {
   to = module.groups["grafana-admins"].pocketid_group.main
   id = "13e2c6a9-7290-43a5-870d-f4e0b8e2dbbe"
 }
+
+import {
+  to = module.users["admin"].pocketid_user.main
+  id = "d7116ece-0bd1-4b39-b486-becb54a5fb06"
+}
+
+import {
+  to = module.users["dominik"].pocketid_user.main
+  id = "1d0eb3c6-65ba-449f-8005-34f6c1cff245"
+}
+
+import {
+  to = module.users["jasmin"].pocketid_user.main
+  id = "5e623314-34a8-4fa9-a443-e5a6bf5983d7"
+}
+
+import {
+  to = module.users["nils"].pocketid_user.main
+  id = "5666b5a9-35f2-4fa8-a008-63e3d23a6350"
+}
+import {
+  to = module.users["alex"].pocketid_user.main
+  id = "524050f4-368c-4dea-9f15-0f07fc4cf26d"
+}

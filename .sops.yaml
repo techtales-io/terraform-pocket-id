@@ -1,0 +1,6 @@
+---
+creation_rules:
+  - path_regex: data/users/.*\.ya?ml
+    encrypted_regex: "^(spec)$"
+    age: >-
+      age1clg0rd6ca86h3lnfnjyqsc9stgr0cnyp3l5uswtusxppjq9h2vcsaqckec

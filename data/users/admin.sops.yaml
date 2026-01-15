@@ -1,0 +1,30 @@
+# yamllint disable
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIDUser
+metadata:
+    name: admin
+spec:
+    email: ENC[AES256_GCM,data:IGYzZDnwvWsaHDRU+7U5XshZ,iv:whf0sjK2/N5QypZUizHgS3OsLVxBwb2w2wGql2Cxujg=,tag:I2I6bCyMo2xuh8AOSCCKZw==,type:str]
+    firstName: ENC[AES256_GCM,data:33U9T6Y=,iv:spHNdFIdCEPyV+0adRmI4cgKRyHICT61WZF2E1MqPk4=,tag:pyK5Bfrx9nbGS1MoYxzDFw==,type:str]
+    lastName: ""
+    isAdmin: ENC[AES256_GCM,data:NSrglQ==,iv:IHIehLel1U2rAJ5rkz4vTedn4aXtiJPnyGg5DKG1bCQ=,tag:+HsMr0x9nH6Mgw31oAnkXQ==,type:bool]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1puk0qfujmj2ekp0x87accmdulvfwp9v70lypevjhu6elaazkjulqzc4zj4
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1VDBiT0FRd1FnVTBDNlhH
+            anE3Wlp3T3lwelhoZ3Q3YnRDay9MRU9pT0JBClQ3TFRVcTc2YXhtOEtoUlc3SWRE
+            aUNLeHhtUmFnN2JGclJnemVpdDhGV2cKLS0tIEd1ZURlNW5qUmFmK0syL3BhbWxY
+            ZDlJSXhIMmlWU04yRXYzSzRYN3BsbnMK7LWH25cG6cnLSQNrrK0iPzmrGt1wu75R
+            H6FvNIN+Juv0x7T3ar6HBNC3sWR4m0dP7Ll/h1pNw079MPNRAV3D3A==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-01-15T23:19:42Z"
+    mac: ENC[AES256_GCM,data:TvOARlA4gqzABiSUOOjes7hGWL3LDV3HnRd+f8Uwn7aAuegNDCXUjoIOnusC3K0ftIef72PNHcpXYx9S2ow6lMS3E3ANjAwTCBQdiKkx0HfPtFrWu4+hqTcmQUus6+uQWlMWUruldBWgCzwPJkILZ1ux0T+LH5spi9ehMrBQYak=,iv:VIezyTnEfhOHxTQm/A40XPIqyPsWjnVjqYvdrrr+jlo=,tag:r0/WDjqmp6eoEALnVL8ozA==,type:str]
+    pgp: []
+    encrypted_regex: ^(spec)$
+    version: 3.9.1

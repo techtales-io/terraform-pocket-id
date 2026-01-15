@@ -1,0 +1,24 @@
+---
+version: "3"
+
+tasks:
+  rotate:
+    desc: Initialize pre-commit hooks
+    cmds:
+      - |
+        #!/usr/bin/env bash
+
+        # Define the paths to the old/current and new age key files
+        SOPS_AGE_KEY_FILE=~/.config/sops/age/keys.txt
+        SOPS_AGE_KEY_FILE_NEW=./mykey.txt
+
+        # Extract public keys
+        OLD_PUBLIC_KEY=$(cat $SOPS_AGE_KEY_FILE | grep -oP "public key: \K(.*)")
+        NEW_PUBLIC_KEY=$(cat $SOPS_AGE_KEY_FILE_NEW | grep -oP "public key: \K(.*)")
+
+        # Find all the *.sops.yaml files recursively and rotate keys
+        find ./data -name "*.sops.yaml" -type f -print0 | xargs -0 -I {} sh -c '
+          echo "Processing: {}"
+          sops --decrypt --age "'"$OLD_PUBLIC_KEY"'" --encrypted-regex "^(spec)$" --in-place "{}"
+          sops --encrypt --age "'"$NEW_PUBLIC_KEY"'" --encrypted-regex "^(spec)$" --in-place "{}"
+        '
