@@ -31,6 +31,6 @@ resource "vault_generic_secret" "main" {
 
   data_json = jsonencode({
     "CLIENT_ID"     = pocketid_client.main.id
-    "CLIENT_SECRET" = pocketid_client.main.secret
+    "CLIENT_SECRET" = pocketid_client.main.client_secret
   })
 }
