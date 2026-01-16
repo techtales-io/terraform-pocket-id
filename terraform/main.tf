@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.9.0, <= 1.14.3"
+  required_version = ">= 1.10.0, <= 1.14.3"
   required_providers {
     # https://registry.terraform.io/providers/aminueza/minio/latest/docs
     pocketid = {
@@ -20,19 +20,19 @@ terraform {
 }
 
 module "yaml" {
-  source = "../modules/data/yaml-loader"
+  source = "./modules/data/yaml-loader"
   path   = "${path.root}/../data"
 }
 
 module "groups" {
-  for_each = module.yaml.data.by_kind["PocketIDGroup"]
-  source   = "../modules/pocket-id/group"
+  for_each = module.yaml.data.by_kind["PocketIdGroup"]
+  source   = "./modules/pocket-id/group"
   config   = each.value
 }
 
 module "clients" {
-  for_each = module.yaml.data.by_kind["PocketIDClient"]
-  source   = "../modules/pocket-id/client"
+  for_each = module.yaml.data.by_kind["PocketIdClient"]
+  source   = "./modules/pocket-id/client"
   # translate the group names to IDs
   config = merge(each.value, {
     spec = merge(each.value.spec, {
@@ -57,7 +57,7 @@ locals {
   user_groups = {
     for user_name in keys(local.users_data) :
     user_name => sort([
-      for group_name, config in module.yaml.data.by_kind["PocketIDGroup"] :
+      for group_name, config in module.yaml.data.by_kind["PocketIdGroup"] :
       module.groups[group_name].data.id
       if contains(try(config.spec.members, []), user_name)
     ])
@@ -74,7 +74,7 @@ module "users" {
     for user_name, data in data.sops_file.users :
     user_name => yamldecode(data.raw)
   }
-  source = "../modules/pocket-id/user"
+  source = "./modules/pocket-id/user"
   config = merge(each.value, {
     spec = merge(each.value.spec, {
       groups = local.user_groups[each.key]

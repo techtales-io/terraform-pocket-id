@@ -17,8 +17,8 @@ variable "config" {
   }
 
   validation {
-    condition     = var.config.kind == "PocketIDGroup"
-    error_message = "The kind must be 'PocketIDGroup'."
+    condition     = var.config.kind == "PocketIdGroup"
+    error_message = "The kind must be 'PocketIdGroup'."
   }
 
   validation {
