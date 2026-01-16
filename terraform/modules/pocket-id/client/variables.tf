@@ -7,13 +7,13 @@ variable "config" {
       namespace = optional(string)
     })
     spec = object({
-      email       = optional(string)
-      firstName   = optional(string)
-      lastName    = optional(string)
-      disabled    = optional(bool)
-      displayName = optional(string)
-      isAdmin     = optional(bool)
-      groups      = optional(list(string))
+      callbackUrls       = optional(list(string))
+      logoutCallbackUrls = optional(list(string))
+      public             = optional(bool)
+      pkce               = optional(bool)
+      launchUrl          = optional(string)
+      reauthenticate     = optional(bool)
+      groups             = optional(list(string))
     })
   })
 
@@ -23,8 +23,8 @@ variable "config" {
   }
 
   validation {
-    condition     = var.config.kind == "PocketIDUser"
-    error_message = "The kind must be 'PocketIDUser'."
+    condition     = var.config.kind == "PocketIdClient"
+    error_message = "The kind must be 'PocketIdClient'."
   }
 
   validation {

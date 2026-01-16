@@ -1,6 +1,6 @@
 # yamllint disable
 apiVersion: terraform.techtales.io/v1alpha1
-kind: PocketIDUser
+kind: PocketIdUser
 metadata:
     name: dominik
 spec:
@@ -23,8 +23,8 @@ sops:
             ZnhPd0NUSmNXektpRnN0Y2dNSlg5cnMKnB+Mkns1KtD3vFTfPBaT7GiyXFxzzk1D
             Hhwwx89yU7fuFV+p3hNEFtbRK9yy3tqDF3zmoRKo1MFGtqmljY1XtA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2026-01-15T23:19:55Z"
-    mac: ENC[AES256_GCM,data:nTrRtxjBTUOOGYVqfWU07EEwFvdXOV/fpJz8q5CtcZQzdrH4d5U9Zj90+UvEXCbCo9TCIB6WIaVPefgwOfNjqRMPWFRWra51ET/Cv5nUfUoUjEpPi+enGtAWQsit+BVaFXBpKv+u3R5XGq6REHShSBCmhVAGenCiH/aqn33+yJk=,iv:odJZmlhyYXcCjSDkLURBTasNWNDXRjEN1HyCJ5LE+Lg=,tag:v2cIPcZKFE6NKlqUmoGUzQ==,type:str]
+    lastmodified: "2026-01-16T18:51:43Z"
+    mac: ENC[AES256_GCM,data:F4MVtjv8eHfLweyjtxAat71RNAKExNJvDEdU2aGbjERohvaFfslqANt5N/XMjJfoTCbJn4DmHoYNhME75YlypWD3AZxvsZe8VprFooQ+MYwWcEVc3fG68ovAVfCgy8lR7g6gEu7GvM63DuKXnMolGZNtrHNGG5PGUSuy+IgYv94=,iv:6bp9T/SDOlo60aYJTMPQrnvR7Fguzzud02OMW9NeFnM=,tag:nB0+wz5VksFbMNfg2jmncA==,type:str]
     pgp: []
     encrypted_regex: ^(spec)$
     version: 3.9.1
