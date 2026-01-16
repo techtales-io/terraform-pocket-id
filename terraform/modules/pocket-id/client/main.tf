@@ -27,7 +27,7 @@ resource "pocketid_client" "main" {
 }
 
 resource "vault_generic_secret" "main" {
-  path = "infra/pocket-id/clients/${pocketid_client.main.name}"
+  path = "infra/pocketid/clients/${pocketid_client.main.name}"
 
   data_json = jsonencode({
     "CLIENT_ID"     = pocketid_client.main.id
