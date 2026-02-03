@@ -1,0 +1,11 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: karakeep
+spec:
+  callbackUrls:
+    - https://karakeep.techtales.io/api/auth/callback/custom
+  groups:
+    - karakeep-users
+  launchUrl: https://karakeep.techtales.io
