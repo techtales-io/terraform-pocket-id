@@ -1,0 +1,12 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: open-webui
+spec:
+  callbackUrls:
+    - https://ai.techtales.io/oauth/oidc/callback
+  groups:
+    - open-webui-users
+    - admins
+  launchUrl: https://ai.techtales.io
