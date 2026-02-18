@@ -4,6 +4,8 @@ kind: PocketIdClient
 metadata:
   name: govee2mqtt
 spec:
+  callbackUrls:
+    - https://govee2mqtt.techtales.io/oauth2/callback
   groups:
     - admins
   launchUrl: https://govee2mqtt.techtales.io
