@@ -1,9 +1,0 @@
----
-apiVersion: terraform.techtales.io/v1alpha1
-kind: PocketIdGroup
-metadata:
-  name: kids
-spec:
-  members:
-    - alex
-    - dominik
