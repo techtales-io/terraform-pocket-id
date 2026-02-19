@@ -10,3 +10,4 @@ includes:
   pre-commit: .taskfiles/pre-commit/Taskfile.yaml
   lint: .taskfiles/lint/Taskfile.yaml
   sops: .taskfiles/sops/Taskfile.yaml
+  vault: .taskfiles/vault/Taskfile.yaml
