@@ -8,4 +8,5 @@ spec:
     - https://zigbee2mqtt.techtales.io/oauth2/callback
   groups:
     - admins
+    - zigbee2mqtt-admins
   launchUrl: https://zigbee2mqtt.techtales.io
