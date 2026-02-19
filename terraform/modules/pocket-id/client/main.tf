@@ -24,6 +24,12 @@ resource "pocketid_client" "main" {
   launch_url                = var.config.spec.launchUrl
   requires_reauthentication = var.config.spec.reauthenticate == null ? false : var.config.spec.reauthenticate
   allowed_user_groups       = var.config.spec.groups != null ? sort(var.config.spec.groups) : null
+
+  lifecycle {
+    ignore_changes = [
+      has_logo,
+    ]
+  }
 }
 
 resource "vault_generic_secret" "main" {
