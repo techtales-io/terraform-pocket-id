@@ -1,0 +1,11 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: echo
+spec:
+  callbackUrls:
+    - https://echo.techtales.io/oauth2/callback
+  groups:
+    - users
+  launchUrl: https://echo.techtales.io
