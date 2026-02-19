@@ -1,0 +1,23 @@
+---
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: "3"
+
+tasks:
+  sync-oidc-credentials:
+    desc: >
+      Copy CLIENT_ID & CLIENT_SECRET from infra/pocketid/clients/<CLIENT> to <TARGET> as OAUTH_CLIENT_ID & OAUTH_CLIENT_SECRET
+      usage: task vault:sync-oidc-credentials CLIENT=clientname TARGET=infra/some/app/secret
+    requires:
+      vars:
+        - CLIENT
+        - TARGET
+    vars:
+      SOURCE: "infra/pocketid/clients/{{.CLIENT}}"
+    cmds:
+      - |
+        CLIENT_ID=$(vault kv get -field=CLIENT_ID {{.SOURCE}}) && \
+        CLIENT_SECRET=$(vault kv get -field=CLIENT_SECRET {{.SOURCE}}) && \
+        ( \
+          vault kv patch {{.TARGET}} OAUTH_CLIENT_ID="$CLIENT_ID" OAUTH_CLIENT_SECRET="$CLIENT_SECRET" || \
+          vault kv put {{.TARGET}} OAUTH_CLIENT_ID="$CLIENT_ID" OAUTH_CLIENT_SECRET="$CLIENT_SECRET" \
+        )
