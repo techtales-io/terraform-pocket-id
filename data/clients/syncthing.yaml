@@ -1,0 +1,11 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: syncthing
+spec:
+  callbackUrls:
+    - https://syncthing.techtales.io/oauth2/callback
+  groups:
+    - admins
+  launchUrl: https://syncthing.techtales.io
