@@ -9,5 +9,5 @@ spec:
     - http://localhost:8250/pocketid/oidc/callback
   groups:
     - admins
-    - priviliged-users
+    - privileged-users
   launchUrl: https://secrets.techtales.io
