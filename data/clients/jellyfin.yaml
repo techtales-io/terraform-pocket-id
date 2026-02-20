@@ -6,7 +6,7 @@ metadata:
 spec:
   callbackUrls:
     - https://jellyfin.techtales.io/sso/OID/redirect/pocketid
-  # groups:
-  #   - grafana-admins
+  groups:
+    - users
   launchUrl: https://jellyfin.techtales.io
   pkce: true

@@ -7,5 +7,5 @@ spec:
   callbackUrls:
     - https://govee2mqtt.techtales.io/oauth2/callback
   groups:
-    - admins
+    - privileged-users
   launchUrl: https://govee2mqtt.techtales.io

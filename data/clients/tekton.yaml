@@ -2,10 +2,10 @@
 apiVersion: terraform.techtales.io/v1alpha1
 kind: PocketIdClient
 metadata:
-  name: zigbee2mqtt
+  name: tekton
 spec:
   callbackUrls:
-    - https://zigbee2mqtt.techtales.io/oauth2/callback
+    - https://tekton.techtales.io/oauth2/callback
   groups:
     - privileged-users
-  launchUrl: https://zigbee2mqtt.techtales.io
+  launchUrl: https://tekton.techtales.io
