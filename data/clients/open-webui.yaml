@@ -7,5 +7,6 @@ spec:
   callbackUrls:
     - https://ai.techtales.io/oauth/oidc/callback
   groups:
+    - admins
     - users
   launchUrl: https://ai.techtales.io

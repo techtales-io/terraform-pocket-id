@@ -5,7 +5,6 @@ metadata:
   name: users
 spec:
   members:
-    - admin
     - alex
     - dominik
     - jasmin

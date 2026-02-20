@@ -7,5 +7,6 @@ spec:
   callbackUrls:
     - https://karakeep.techtales.io/api/auth/callback/custom
   groups:
+    - admins
     - users
   launchUrl: https://karakeep.techtales.io
