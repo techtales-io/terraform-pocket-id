@@ -7,6 +7,5 @@ spec:
   callbackUrls:
     - https://ai.techtales.io/oauth/oidc/callback
   groups:
-    - open-webui-users
-    - admins
+    - users
   launchUrl: https://ai.techtales.io

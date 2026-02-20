@@ -7,6 +7,5 @@ spec:
   callbackUrls:
     - https://zigbee2mqtt.techtales.io/oauth2/callback
   groups:
-    - admins
-    - zigbee2mqtt-admins
+    - privileged-users
   launchUrl: https://zigbee2mqtt.techtales.io
