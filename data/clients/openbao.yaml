@@ -7,6 +7,7 @@ spec:
   callbackUrls:
     - https://secrets.techtales.io/ui/vault/auth/pocketid/oidc/callback
     - http://localhost:8250/pocketid/oidc/callback
-  # groups:
-  #   - grafana-admins
+  groups:
+    - admins
+    - privileged-users
   launchUrl: https://secrets.techtales.io

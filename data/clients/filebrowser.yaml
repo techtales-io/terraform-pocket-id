@@ -7,5 +7,6 @@ spec:
   callbackUrls:
     - https://files.techtales.io/api/auth/oidc/callback
   groups:
-    - filebrowser-users
+    - admins
+    - users
   launchUrl: https://files.techtales.io
