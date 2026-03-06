@@ -14,7 +14,7 @@ terraform {
     # https://registry.terraform.io/providers/carlpett/sops/latest/docs
     sops = {
       source  = "carlpett/sops"
-      version = "1.3.0"
+      version = "1.4.0"
     }
   }
 }
