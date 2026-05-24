@@ -1,7 +1,7 @@
 terraform {
   required_version = ">= 1.10.0, <= 1.15.4"
   required_providers {
-    # https://registry.terraform.io/providers/aminueza/minio/latest/docs
+    # https://registry.terraform.io/providers/trozz/pocketid/latest/docs
     pocketid = {
       source  = "trozz/pocketid"
       version = "0.1.7"
