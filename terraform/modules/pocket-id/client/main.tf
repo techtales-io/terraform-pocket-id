@@ -26,8 +26,9 @@ resource "pocketid_client" "main" {
   allowed_user_groups       = var.config.spec.groups != null ? sort(var.config.spec.groups) : null
 }
 
-resource "vault_generic_secret" "main" {
-  path = "infra/pocketid/clients/${pocketid_client.main.name}"
+resource "vault_kv_secret_v2" "main" {
+  mount = "infra"
+  name  = "pocketid/clients/${pocketid_client.main.name}"
 
   data_json = jsonencode({
     "CLIENT_ID"     = pocketid_client.main.id
