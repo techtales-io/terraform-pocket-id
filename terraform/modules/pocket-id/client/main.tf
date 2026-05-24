@@ -39,11 +39,11 @@ resource "pocketid_client" "main" {
   # │ ignore_changes has no effect. Remove the attribute from ignore_changes to
   # │ quiet this warning.
 
-  #   lifecycle {
-  #     ignore_changes = [
-  #       has_logo,
-  #     ]
-  #   }
+  lifecycle {
+    ignore_changes = [
+      allowed_user_groups,
+    ]
+  }
 }
 
 resource "vault_generic_secret" "main" {
