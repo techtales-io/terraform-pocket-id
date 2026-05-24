@@ -101,11 +101,6 @@ repos:
           - --config
           - .prettierrc.yaml
 
-  - repo: https://github.com/k8s-at-home/sops-pre-commit
-    rev: v2.1.1
-    hooks:
-      - id: forbid-secrets
-
   - repo: https://github.com/gitleaks/gitleaks
     rev: v8.30.1
     hooks:
