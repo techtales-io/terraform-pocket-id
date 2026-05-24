@@ -1,7 +1,7 @@
 terraform {
   required_version = ">= 1.10.0, <= 1.15.4"
   required_providers {
-    # https://registry.terraform.io/providers/aminueza/minio/latest/docs
+    # https://registry.terraform.io/providers/trozz/pocketid/latest/docs
     pocketid = {
       source  = "trozz/pocketid"
       version = "0.1.7"
@@ -46,12 +46,8 @@ module "clients" {
 
 locals {
   users_data = {
-    admin   = "${path.root}/../data/users/admin.sops.yaml",
-    alex    = "${path.root}/../data/users/alex.sops.yaml",
-    dominik = "${path.root}/../data/users/dominik.sops.yaml",
-    jasmin  = "${path.root}/../data/users/jasmin.sops.yaml",
-    nils    = "${path.root}/../data/users/nils.sops.yaml",
-
+    for f in fileset("${path.root}/../data/users", "*.sops.yaml") :
+    replace(f, ".sops.yaml", "") => "${path.root}/../data/users/${f}"
   }
   # extract user groups from group spec.members and then get group id from module.groups[group_name].data.id
   user_groups = {

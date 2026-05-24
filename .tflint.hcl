@@ -1,14 +1,6 @@
-config {
-  force = false
-  disabled_by_default = false
-}
-
-rule "terraform_module_pinned_source" {
+plugin "terraform" {
   enabled = true
-  style = "flexible"
-  default_branches = ["main", "master", "default", "develop"]
-}
-
-rule "terraform_deprecated_interpolation" {
-  enabled = true
+  preset  = "recommended"
+  version = "0.14.1"
+  source  = "github.com/terraform-linters/tflint-ruleset-terraform"
 }
