@@ -34,6 +34,7 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: ${{ github.event_name == 'workflow_dispatch' }}
           GITHUB_TOKEN: "${{ steps.generate-token.outputs.token }}"
+          TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES: GITHUB_TOKEN
           # GITHUB_STATUS_REPORTER only works if VALIDATE_ALL_CODEBASE is false!
           GITHUB_STATUS_REPORTER: true
           REPORTERS_MARKDOWN_TYPE: simple
