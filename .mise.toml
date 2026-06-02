@@ -7,5 +7,5 @@ legacy_version_file_disable_tools = ['terraform']
 "aqua:aquasecurity/trivy" = "0.70.0"
 "aqua:terraform-docs/terraform-docs" = "0.24.0"
 "aqua:pre-commit/pre-commit" = "4.6.0"
-"aqua:terraform-linters/tflint" = "0.62.1"
+"aqua:terraform-linters/tflint" = "0.63.0"
 "aqua:direnv/direnv" = "2.37.1"
