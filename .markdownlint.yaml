@@ -2,4 +2,12 @@
 default: true
 
 # MD013/line-length - Line length
-MD013: false
+MD013:
+  code_block_line_length: 120
+  code_blocks: true
+  heading_line_length: 80
+  headings: true
+  line_length: 240
+  stern: false
+  strict: false
+  tables: true
