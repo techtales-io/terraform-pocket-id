@@ -10,7 +10,7 @@
 
 | Name | Version |
 | ---- | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0, <= 1.15.7 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0, <= 1.15.8 |
 | <a name="requirement_pocketid"></a> [pocketid](#requirement\_pocketid) | 2.1.0 |
 
 ## Providers
