@@ -1,0 +1,15 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: immich
+spec:
+  callbackUrls:
+    - https://immich.techtales.io/auth/login
+    - https://immich.techtales.io/user-settings
+    - app.immich:///oauth-callback
+  groups:
+    - admins
+    - users
+  launchUrl: https://immich.techtales.io
+  pkce: true
