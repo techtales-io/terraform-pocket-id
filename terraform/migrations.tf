@@ -39,7 +39,18 @@ import {
   to = module.users["nils"].pocketid_user.main
   id = "5666b5a9-35f2-4fa8-a008-63e3d23a6350"
 }
+
 import {
   to = module.users["alex"].pocketid_user.main
   id = "524050f4-368c-4dea-9f15-0f07fc4cf26d"
+}
+
+import {
+  to = module.users["karin"].pocketid_user.main
+  id = "51449891-4fe0-4b17-b482-5fd46a7cdd6b"
+}
+
+import {
+  to = module.users["boerni"].pocketid_user.main
+  id = "bddde61b-f3d2-42bc-a3af-bfba0ee9bd4c"
 }
