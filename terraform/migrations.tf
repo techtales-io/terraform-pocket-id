@@ -51,6 +51,6 @@ import {
 }
 
 import {
-  to = module.users["boerni"].pocket_user.main
+  to = module.users["boerni"].pocketid_user.main
   id = "959d1301-e714-4cdd-a131-ae90ba3529aa"
 }
