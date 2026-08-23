@@ -47,10 +47,10 @@ import {
 
 import {
   to = module.users["karin"].pocketid_user.main
-  id = "dc2a2da6-104d-46ea-8248-bb457d36a80e"
+  id = "51449891-4fe0-4b17-b482-5fd46a7cdd6b"
 }
 
 import {
   to = module.users["boerni"].pocketid_user.main
-  id = "959d1301-e714-4cdd-a131-ae90ba3529aa"
+  id = "bddde61b-f3d2-42bc-a3af-bfba0ee9bd4c"
 }
