@@ -5,8 +5,8 @@ metadata:
   name: new-api
 spec:
   callbackUrls:
-    - https://new-api.techtales.ai/oauth/oidc
+    - https://techtales.ai/oauth/oidc
   groups:
     - admins
     - users
-  launchUrl: https://new-api.techtales.ai
+  launchUrl: https://techtales.ai
