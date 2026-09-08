@@ -1,0 +1,12 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: new-api
+spec:
+  callbackUrls:
+    - https://new-api.techtales.ai/oauth/oidc
+  groups:
+    - admins
+    - users
+  launchUrl: https://new-api.techtales.ai
