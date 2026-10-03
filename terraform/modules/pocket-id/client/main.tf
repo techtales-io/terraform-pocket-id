@@ -4,7 +4,7 @@ terraform {
     # https://registry.terraform.io/providers/trozz/pocketid/latest/docs
     pocketid = {
       source  = "trozz/pocketid"
-      version = "2.3.0"
+      version = "2.4.2"
     }
     # https://registry.terraform.io/providers/hashicorp/vault/latest/docs
     vault = {
