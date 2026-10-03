@@ -1,0 +1,11 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: forgejo
+spec:
+  callbackUrls:
+    - https://git.techtales.io/user/oauth2/pocket-id/callback
+  groups:
+    - admins
+  launchUrl: https://git.techtales.io
