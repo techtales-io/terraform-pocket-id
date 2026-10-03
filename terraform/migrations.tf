@@ -54,3 +54,9 @@ import {
   to = module.users["boerni"].pocketid_user.main
   id = "bddde61b-f3d2-42bc-a3af-bfba0ee9bd4c"
 }
+
+# 20261004_000000 import_existing_clients
+import {
+  to = module.clients["new-api"].pocketid_client.main
+  id = "db5e3106-583e-4025-9932-0adc1cc904c2"
+}

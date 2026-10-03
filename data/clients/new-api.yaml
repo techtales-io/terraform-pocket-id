@@ -5,7 +5,7 @@ metadata:
   name: new-api
 spec:
   callbackUrls:
-    - https://techtales.ai/oauth/oidc
+    - https://techtales.ai/oauth/pocketid
   groups:
     - admins
     - users
