@@ -8,4 +8,5 @@ spec:
     - https://git.techtales.io/user/oauth2/pocket-id/callback
   groups:
     - admins
+    - users
   launchUrl: https://git.techtales.io
