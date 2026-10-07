@@ -1,0 +1,12 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: opengist
+spec:
+  callbackUrls:
+    - https://gist.techtales.io/oauth/openid-connect/callback
+  groups:
+    - admins
+    - users
+  launchUrl: https://gist.techtales.io
