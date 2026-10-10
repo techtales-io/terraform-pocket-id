@@ -1,0 +1,13 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: backstage
+spec:
+  callbackUrls:
+    - https://backstage.techtales.io/api/auth/oidc/handler/frame
+    - https://backstage.techtales.io/api/auth/oidc/redirect
+  groups:
+    - admins
+    - users
+  launchUrl: https://backstage.techtales.io
