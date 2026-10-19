@@ -60,3 +60,9 @@ import {
   to = module.clients["new-api"].pocketid_client.main
   id = "db5e3106-583e-4025-9932-0adc1cc904c2"
 }
+
+# 20261019_120000 import_existing_clients
+import {
+  to = module.clients["homepage"].pocketid_client.main
+  id = "0a775843-c83d-4bcb-9dcb-5df078887640"
+}

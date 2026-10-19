@@ -1,0 +1,11 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: homepage
+spec:
+  callbackUrls:
+    - https://home.techtales.io/api/auth/callback/homepage-oidc
+  groups:
+    - users
+  launchUrl: https://home.techtales.io
