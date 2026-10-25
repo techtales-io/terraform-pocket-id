@@ -10,14 +10,14 @@
 
 | Name | Version |
 | ---- | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0, <= 1.15.8 |
-| <a name="requirement_pocketid"></a> [pocketid](#requirement\_pocketid) | 2.1.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0, <= 1.17.0 |
+| <a name="requirement_pocketid"></a> [pocketid](#requirement\_pocketid) | 2.4.2 |
 
 ## Providers
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_pocketid"></a> [pocketid](#provider\_pocketid) | 2.1.0 |
+| <a name="provider_pocketid"></a> [pocketid](#provider\_pocketid) | 2.4.2 |
 
 ## Modules
 
@@ -27,7 +27,7 @@ No modules.
 
 | Name | Type |
 | ---- | ---- |
-| [pocketid_user.main](https://registry.terraform.io/providers/trozz/pocketid/2.1.0/docs/resources/user) | resource |
+| [pocketid_user.main](https://registry.terraform.io/providers/trozz/pocketid/2.4.2/docs/resources/user) | resource |
 
 ## Inputs
 

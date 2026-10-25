@@ -10,16 +10,16 @@
 
 | Name | Version |
 | ---- | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0, <= 1.15.8 |
-| <a name="requirement_pocketid"></a> [pocketid](#requirement\_pocketid) | 2.1.0 |
-| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 5.10.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0, <= 1.17.0 |
+| <a name="requirement_pocketid"></a> [pocketid](#requirement\_pocketid) | 2.4.2 |
+| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 5.13.0 |
 
 ## Providers
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_pocketid"></a> [pocketid](#provider\_pocketid) | 2.1.0 |
-| <a name="provider_vault"></a> [vault](#provider\_vault) | 5.10.1 |
+| <a name="provider_pocketid"></a> [pocketid](#provider\_pocketid) | 2.4.2 |
+| <a name="provider_vault"></a> [vault](#provider\_vault) | 5.13.0 |
 
 ## Modules
 
@@ -29,8 +29,8 @@ No modules.
 
 | Name | Type |
 | ---- | ---- |
-| [pocketid_client.main](https://registry.terraform.io/providers/trozz/pocketid/2.1.0/docs/resources/client) | resource |
-| [vault_kv_secret_v2.main](https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kv_secret_v2) | resource |
+| [pocketid_client.main](https://registry.terraform.io/providers/trozz/pocketid/2.4.2/docs/resources/client) | resource |
+| [vault_kv_secret_v2.main](https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kv_secret_v2) | resource |
 
 ## Inputs
 
