@@ -79,14 +79,14 @@ task pre-commit:init
 
 ## ENV
 
-| Name                    | Description                             |
-| ----------------------- | --------------------------------------- |
-| `VAULT_TOKEN`           | vault token (not required for atlantis) |
-| `VAULT_ADDR`            | the vault address                       |
-| `AWS_ENDPOINT_URL_S3`   | endpoint url for the s3 state backend   |
-| `AWS_REGION`            | region for the s3 state backend         |
-| `AWS_ACCESS_KEY_ID`     | username for the s3 state backend       |
-| `AWS_SECRET_ACCESS_KEY` | password for the s3 state backend       |
+| Name                    | Description                               |
+| ----------------------- | ----------------------------------------- |
+| `VAULT_TOKEN`           | openbao token (not required for atlantis) |
+| `VAULT_ADDR`            | the openbao address                       |
+| `AWS_ENDPOINT_URL_S3`   | endpoint url for the s3 state backend     |
+| `AWS_REGION`            | region for the s3 state backend           |
+| `AWS_ACCESS_KEY_ID`     | username for the s3 state backend         |
+| `AWS_SECRET_ACCESS_KEY` | password for the s3 state backend         |
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

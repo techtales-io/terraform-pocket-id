@@ -15,8 +15,11 @@
 
 ## Code Quality & Linting
 
-- **Pre-commit**: Heavy reliance on `pre-commit` hooks for validation. This includes `terraform fmt`, `tflint`, `trivy`, `gitleaks`, `yamllint`, `markdownlint`, and `prettier`. Run `task pre-commit:run` or `pre-commit run --all-files` to verify changes locally before committing.
+- **Pre-commit**: Heavy reliance on `pre-commit` hooks for validation. This includes `terraform fmt`, `tflint`, `trivy`, `gitleaks`, `yamllint`, `markdownlint`, and `prettier`.
+  Run `task pre-commit:run` or `pre-commit run --all-files` to verify changes locally before committing.
 
 ## Operational Workflows
 
-- **Vault Secrets Sync**: There is a specific task to sync Pocket ID OIDC credentials to Vault: `task vault:sync-oidc-credentials CLIENT=<clientname> TARGET=<vault_path>`. It reads `infra/pocketid/clients/<CLIENT>` and patches `<TARGET>` with `OAUTH_CLIENT_ID` and `OAUTH_CLIENT_SECRET`.
+- **OpenBao Secrets Sync**: There is a specific task to sync Pocket ID OIDC credentials to OpenBao:
+  `task bao:sync-oidc-credentials CLIENT=<clientname> TARGET=<bao_path>`.
+  It reads `infra/pocketid/clients/<CLIENT>` and patches `<TARGET>` with `OAUTH_CLIENT_ID` and `OAUTH_CLIENT_SECRET`.
