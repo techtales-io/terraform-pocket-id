@@ -9,6 +9,7 @@ vars:
 
 includes:
   pre-commit: .taskfiles/pre-commit
+  bao: .taskfiles/bao
 
 tasks:
   lint:
