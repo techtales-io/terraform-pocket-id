@@ -1,0 +1,19 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: atlantis
+spec:
+  callbackUrls:
+    - https://atlantis-techtales-io-terraform-discord.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-gcloud.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-github.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-gworkspace.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-harbor.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-minio.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-pocket-id.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-unifi.techtales.io/oauth2/callback
+    - https://atlantis-techtales-io-terraform-vault.techtales.io/oauth2/callback
+    - https://atlantis-tyriis-terraform-github.techtales.io/oauth2/callback
+  groups:
+    - privileged-users
