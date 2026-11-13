@@ -6,7 +6,7 @@ metadata:
 spec:
   callbackUrls:
     - https://secrets.techtales.io/ui/vault/auth/pocketid/oidc/callback
-    - http://localhost:8250/pocketid/oidc/callback
+    - http://localhost:8250/oidc/callback
   groups:
     - admins
     - privileged-users
