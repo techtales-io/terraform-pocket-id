@@ -1,0 +1,12 @@
+---
+apiVersion: terraform.techtales.io/v1alpha1
+kind: PocketIdClient
+metadata:
+  name: talosctl
+spec:
+  callbackUrls:
+    - http://127.0.0.1:8900/callback
+  public: true
+  pkce: true
+  groups:
+    - users
